@@ -1,0 +1,527 @@
+/* Styles comuns */
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button:hover {
+    cursor: pointer;
+}
+
+
+/* Navegacion */
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+.logo_container {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+.categoriesLinks_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: .8;
+    padding: 10px;
+    gap: 40px;
+    text-align: center;
+}
+.search_container {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+.offer_container {
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+.offer_content {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 50px;
+}
+.offer_content-title {
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 20px;
+}
+.offer_content-text {
+    font-size: 20px;
+}
+.buttonOffer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.buttonOffer button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+.offer_container img {
+    height: 100%;
+}
+main {
+    margin-top: 50px;
+    background-color: rgba(250, 250, 250, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.categories_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    max-width: 1200px;
+    border-radius: 20px;
+}
+.categories_nav {
+    display: flex;
+    max-width: 1200px;
+    margin-left: 10px;
+    width: 100vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-evenly;
+}
+.categories_nav-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.categoriesArrows {
+    display: flex;
+    gap: 30px;
+}
+button {
+    background-color: rgba(250, 250, 250, 1);
+    border: none;
+}
+.categoriesArrows img {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.categoriesArrows img:hover {
+    border: 2px solid black;
+}
+.categories_icons {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    gap: 10px;
+    padding: 10px;
+}
+.categorie_icon {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid gainsboro;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+.categorie_icon:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+.categorie_icon img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.products_containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.products_nav {
+    display: flex;
+    width: 80vw;
+    max-width: 1200px;
+    justify-content: space-between;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.products_nav button {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: aqua;
+}
+.products_nav button:hover {
+    border: 2px solid aquamarine;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.products_list {
+    max-width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.product {
+    width: 150px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+.product:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+.product img {
+    width: 100%;
+}
+.product_name {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.product_beforePrice {
+    font-size: 11px;
+    text-decoration: line-through;
+    margin-bottom: 8px;
+}
+.product_afterPrice-container {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.afterPrice2-contaiener {
+    font-size: 11px;
+    color: green;
+    font-weight: bold;
+}
+.offerText {
+    font-size: 13px;
+    color: green;
+}
+
+.formsPay_container {
+    display: flex;
+    width: 95vw;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    margin: 10px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.formsPay_container1 :first-child, .formsPay_container3 div :first-child {
+    font-size: 18px;
+}
+.formsPay_container1 :last-child, .formsPay_container3 div :last-child {
+    color: blue;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.formsPay_container2 img {
+    width: 100px;
+}
+.formsPay_container3 {
+    display: flex;
+    gap: 10px;
+}
+.formsPay_container3 img {
+    border: 2px solid teal;
+    padding: 5px;
+    border-radius: 30px;
+}
+.subscription_container {
+    width: 95vw;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 20px 20px;
+}
+.subscription_price {
+    background-color: cadetblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+}
+.subscription_price-container1 {
+    font-size: 18px;
+}
+.subscription_price-container1 span {
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.subscription_price-container2 {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subscription_price-container2 :last-child {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.subscription_benefits {
+    display: flex;
+    flex-direction: column;
+}
+.subscription_benefits img {
+    width: 90px;
+}
+.subscription_benefits-text {
+    font-size: 20px;
+    margin: 20px;
+}
+.subscription_benefits-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.benefits_icons-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+.benefits_icons-container1 img {
+    width: 80px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 15px;
+}
+.benefits_icons-container2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+.benefits_icons-container2 img {
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 15px;
+}
+.benefits_icons-container3 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+.benefits_icons-container3 img {
+    width: 80px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 20px;
+    margin-right: 15px;
+}
+.subscription_button {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.subscription_button button {
+    margin-right: 20px;
+    background-color: cadetblue;
+    padding: 7px 12px;
+    border-radius: 5px;
+}
+footer {
+    height: 50vh;
+}
+
+@media (max-width: 1200px) {
+    .offer_container {
+        position: relative;
+        background-image: url(/assets/imgIndex/pexels-canvy-mockups-205316.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .offer_container img {
+        width: auto;
+        min-width: 900px;
+        display: none;
+    }
+    .offer_content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 2;
+    }
+    .offer_container::before {
+        content: '';
+        position: absolute; /* Establece una posición absoluta para que se superponga a los elementos secundarios */
+        width: 95%;
+        height: 50%;
+        background-color: rgba(255, 255, 255, .8); /* Fondo semitransparente para 
+        difuminar la imagen de fondo */
+        z-index: 1; /* Asegura que el fondo semitransparente esté por encima de la imagen de fondo */
+        border: 2px solid wheat;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .subscription_price {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .subscription_price-container1 {
+        flex: 1;
+        min-width: 300px;
+    }
+    .subscription_price-container2 {
+        flex: 1;
+        display: flex;
+        align-items: end;
+        min-width: 150px;
+    }
+    .formsPay_container3 {
+        display: none;
+    }
+    .categories_nav-title {
+        font-size: 18px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .products_nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .products_nav p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 515px) {
+    .subscription_price-container1 {
+        text-align: center;
+    }
+    .subscription_price-container2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 150px;
+        margin-top: 20px;
+        border-top: 1px solid black;
+        padding: 10px;
+    }
+}
+
+.subscription_benefits-icons div {
+    min-width: 225px;
+}
+
+@media (max-width: 750px) {
+    .subscription_benefits-icons {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .subscription_icon-general {
+        width: 300px;
+        max-width: 300px;
+        min-width: 225px;
+        display: flex;
+        text-align: center;
+    }
+    .benefits_icons-container2 img {
+        border: none;
+        background-color: rebeccapurple;
+        padding: 1px;
+    }
+    .benefits_icons-container2 {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .categoriesLinks_container {
+        display: none;
+    }
+}
+@media (max-width: 430px) {
+    .formsPay_container2 {
+        display: none;
+    }
+    .formsPay_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formsPay_container1 {
+        text-align: center;
+    }
+}
